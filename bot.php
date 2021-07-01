@@ -3,7 +3,7 @@ include('../../settings.php');
 
 error_reporting(1);
 ob_start();
-$API_KEY = "1134854595:AAGBukv0fETnMi8aGiCBU4s8hNcmQFcooh0";
+$API_KEY = "";
 
 define('API_KEY',$API_KEY);
 
