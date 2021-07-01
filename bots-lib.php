@@ -27,12 +27,12 @@ function cdl_add_user($link, $username, $chat_id, $name, $old_id){
                                                       mysqli_real_escape_string($link, $chat_id),
                                                     mysqli_real_escape_string($link, $name));
 
-              //echo $query;
-              $result = mysqli_query($link, $query);
+      
+      $result = mysqli_query($link, $query);
 
-              if (!$result)
-                  die(mysqli_error($link));
-    return true;
+      if (!$result)
+          die(mysqli_error($link));
+      return true;
   }
 
 function cdl_bot_textlog($link, $chat_id, $username, $text){
@@ -46,10 +46,10 @@ function cdl_bot_textlog($link, $chat_id, $username, $text){
                                                   mysqli_real_escape_string($link, $username),
                                                   mysqli_real_escape_string($link, $text));
 
-            //echo $query;
-            $result = mysqli_query($link, $query);
+    
+    $result = mysqli_query($link, $query);
 
-            if (!$result)
-                die(mysqli_error($link));
+    if (!$result)
+        die(mysqli_error($link));
   return true;
 }

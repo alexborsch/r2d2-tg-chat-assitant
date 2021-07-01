@@ -1,9 +1,9 @@
 <?php
-include('settings.php');
+include('../../settings.php');
 
 error_reporting(1);
 ob_start();
-$API_KEY = "";
+$API_KEY = "1134854595:AAGBukv0fETnMi8aGiCBU4s8hNcmQFcooh0";
 
 define('API_KEY',$API_KEY);
 
@@ -57,11 +57,12 @@ $left_chat_members = $message->left_chat_member->id;
 $title = $message->chat->title;
 if($new_chat_members){
   $reply = "*Привет * [$name](tg://user?id=$new_chat_members)!
-Перед тем как начать общение, советую ознакомится с правилами: [Правила сообщества](https://coderlog.top/rules_cdl.php)
-Если ты хочешь помочь каналу материально то вся инфа здесь: [Donate](https://coderlog.top/donate.php)
-А если хочешь узнать кто я такой и почему тебя приветствую, напиши здесь 'hey r2' и я тебе все расскажу.
+Добро пожаловать в сообщество CoderLog
+Правила сообщества находятся здесь -> [Правила](https://coderlog.top/rules/)
+Информация о том как задонатить проекту есть здесь -> [Донат](https://coderlog.top/donate/)
 Веди себя хорошо, мой руки с мылом, ешь витамины и слушайся маму ;)
 Чтобы получить список всех команд напиши 'помощь'
+Лучший крипта-кошелёк: [Trustee Wallet](https://trustee.deals/link/FMzBjNjQ)
   ";
    bot('sendmessage',[
    'chat_id'=>$chat_id,
